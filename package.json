@@ -8,6 +8,7 @@
     "start": "cd server && node server.js",
     "server": "cd server nodemon server.js --ignore client",
     "build": "cd client && npm run build",
+    "install": "concurrently \"cd client && npm install\" \"cd server && npm install\" ",
     "client": "cd client && npm start"
   },
   "repository": {
@@ -20,7 +21,7 @@
     "url": "https://github.com/traevaldez/contact-card/issues"
   },
   "homepage": "https://github.com/traevaldez/contact-card#readme",
-  "dependencies": {
+  "devDependencies": {
     "concurrently": "^7.6.0"
   }
 }
